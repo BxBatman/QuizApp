@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<quiz>
+  <question id="1">
+    <category>Historia</category>
+    <text>Czy bitwa pod grunwaldem odbyła się w 1910r. ?</text>
+    <answer>Tak</answer>
+  </question>
+  
+  <question id="2">
+    <category>Historia</category>
+    <text>Pokój w Budziszynie został podpisany w 1018r. Tak czy nie ?</text>
+    <answer>Tak</answer>
+  </question>
+  <question id="3">
+    <category>Historia</category>
+    <text>Kordian został napisany przez Adama Mickiewicza</text>
+    <answer>Nie</answer>
+  </question>
+  
+  <question id="4">
+    <category>Historia</category>
+    <text>1650 - Pojawienie się pierwszych jezuitów w Polsce</text>
+    <answer>Nie</answer>
+  </question>
+
+  <question id="5">
+    <category>Historia</category>
+    <text>Kraków odniósł najwięcej strat podczas 2 wojny światowej</text>
+    <answer>Nie</answer>
+  </question>
+  
+ </quiz>
