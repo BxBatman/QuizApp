@@ -36,16 +36,14 @@ namespace QuizApp
             
         }
 
+        public void doQuiz(IEnumerable<XElement> list) {
 
-        private void buttonHistory_Click(object sender, EventArgs e)
-        {
-            var historyList = from hl in xElement.Elements("question")
-                              where (string)hl.Element("category") == "Historia"
-                              select hl;
 
             int num = 0;
-            foreach (XElement xEle in historyList) {
-                DialogResult answer = MessageBox.Show(xEle.Element("text").Value, "Pytanie"+num, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            foreach (XElement xEle in list)
+            {
+                DialogResult answer = MessageBox.Show(xEle.Element("text").Value, "Pytanie" + num, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (answer == DialogResult.Yes)
                 {
                     if (checkAnswer(xEle))
@@ -58,18 +56,20 @@ namespace QuizApp
                         MessageBox.Show("Odpowiedz niepoprawna", "Przykro nam", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                else if (answer == DialogResult.No) {
+                else if (answer == DialogResult.No)
+                {
                     if (!checkAnswer(xEle))
                     {
                         num++;
                         MessageBox.Show("Odpowiedz poprawana", "Gratulacje!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    else {
+                    else
+                    {
                         MessageBox.Show("Odpowiedz niepoprawna", "Przykro nam", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
-            if (historyList.Count() == num)
+            if (list.Count() == num)
             {
                 MessageBox.Show("Zdobyłeś maksymalną liczbę pkt!!", "To koniec!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -77,6 +77,22 @@ namespace QuizApp
             {
                 MessageBox.Show("Zdobyłeś " + num + " pkt", "To koniec!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+
+
+        
+
+
+
+
+        private void buttonHistory_Click(object sender, EventArgs e)
+        {
+            var historyList = from hl in xElement.Elements("question")
+                              where (string)hl.Element("category") == "Historia"
+                              select hl;
+
+            doQuiz(historyList);
 
 
         }
@@ -84,15 +100,33 @@ namespace QuizApp
         private void buttonSport_Click(object sender, EventArgs e)
         {
 
+            var sportList = from hl in xElement.Elements("question")
+                              where (string)hl.Element("category") == "Sport"
+                              select hl;
+
+            doQuiz(sportList);
+
         }
 
         private void buttonTechnology_Click(object sender, EventArgs e)
         {
 
+            var technologyList = from hl in xElement.Elements("question")
+                            where (string)hl.Element("category") == "Technologia"
+                            select hl;
+
+            doQuiz(technologyList);
+
         }
 
         private void buttonGeneral_Click(object sender, EventArgs e)
         {
+
+            var generalList = from hl in xElement.Elements("question")
+                            where (string)hl.Element("category") == "Ogólne"
+                            select hl;
+
+            doQuiz(generalList);
 
         }
     }
