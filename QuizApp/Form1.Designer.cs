@@ -32,6 +32,8 @@
             this.buttonSport = new System.Windows.Forms.Button();
             this.buttonTechnology = new System.Windows.Forms.Button();
             this.buttonGeneral = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonHistory
@@ -78,12 +80,38 @@
             this.buttonGeneral.UseVisualStyleBackColor = true;
             this.buttonGeneral.Click += new System.EventHandler(this.buttonGeneral_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(56, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 65);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "QUIZ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(558, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(158, 65);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "QUIZ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(801, 442);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonGeneral);
             this.Controls.Add(this.buttonTechnology);
             this.Controls.Add(this.buttonSport);
@@ -93,6 +121,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuizApp";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -102,5 +131,7 @@
         private System.Windows.Forms.Button buttonSport;
         private System.Windows.Forms.Button buttonTechnology;
         private System.Windows.Forms.Button buttonGeneral;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

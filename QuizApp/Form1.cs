@@ -12,6 +12,7 @@ namespace QuizApp
         private String path;
         private XElement xElement;
         private IEnumerable<XElement> questions;
+        
 
 
         public Form1()
@@ -26,11 +27,11 @@ namespace QuizApp
             string check =(string)xEle.Element("answer");
             if (check.Equals("Tak"))
             {
-                Console.WriteLine("tak");
+                
                 return true;
             }
             else {
-                Console.WriteLine("Nie");
+               
                 return false;
             }
             
@@ -92,7 +93,10 @@ namespace QuizApp
                               where (string)hl.Element("category") == "Historia"
                               select hl;
 
-            doQuiz(historyList);
+            var rnd = new Random();
+            var shuffledList = historyList.OrderBy(item => rnd.Next());
+
+            doQuiz(shuffledList);
 
 
         }
@@ -103,8 +107,10 @@ namespace QuizApp
             var sportList = from hl in xElement.Elements("question")
                               where (string)hl.Element("category") == "Sport"
                               select hl;
+            var rnd = new Random();
+            var shuffledList = sportList.OrderBy(item => rnd.Next());
 
-            doQuiz(sportList);
+            doQuiz(shuffledList);
 
         }
 
@@ -114,8 +120,10 @@ namespace QuizApp
             var technologyList = from hl in xElement.Elements("question")
                             where (string)hl.Element("category") == "Technologia"
                             select hl;
+            var rnd = new Random();
+            var shuffledList = technologyList.OrderBy(item => rnd.Next());
 
-            doQuiz(technologyList);
+            doQuiz(shuffledList);
 
         }
 
@@ -125,8 +133,10 @@ namespace QuizApp
             var generalList = from hl in xElement.Elements("question")
                             where (string)hl.Element("category") == "Ogólne"
                             select hl;
+            var rnd = new Random();
+            var shuffledList = generalList.OrderBy(item => rnd.Next());
 
-            doQuiz(generalList);
+            doQuiz(shuffledList);
 
         }
     }
