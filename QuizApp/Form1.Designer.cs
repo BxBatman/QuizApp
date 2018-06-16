@@ -36,6 +36,7 @@
             // 
             // buttonHistory
             // 
+            this.buttonHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.buttonHistory.Location = new System.Drawing.Point(313, 52);
             this.buttonHistory.Name = "buttonHistory";
             this.buttonHistory.Size = new System.Drawing.Size(174, 65);
@@ -46,6 +47,7 @@
             // 
             // buttonSport
             // 
+            this.buttonSport.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.buttonSport.Location = new System.Drawing.Point(313, 142);
             this.buttonSport.Name = "buttonSport";
             this.buttonSport.Size = new System.Drawing.Size(174, 70);
@@ -56,6 +58,7 @@
             // 
             // buttonTechnology
             // 
+            this.buttonTechnology.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.buttonTechnology.Location = new System.Drawing.Point(313, 232);
             this.buttonTechnology.Name = "buttonTechnology";
             this.buttonTechnology.Size = new System.Drawing.Size(174, 65);
@@ -66,9 +69,10 @@
             // 
             // buttonGeneral
             // 
-            this.buttonGeneral.Location = new System.Drawing.Point(313, 327);
+            this.buttonGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.buttonGeneral.Location = new System.Drawing.Point(313, 321);
             this.buttonGeneral.Name = "buttonGeneral";
-            this.buttonGeneral.Size = new System.Drawing.Size(174, 67);
+            this.buttonGeneral.Size = new System.Drawing.Size(174, 73);
             this.buttonGeneral.TabIndex = 3;
             this.buttonGeneral.Text = "Wiedza ogólna";
             this.buttonGeneral.UseVisualStyleBackColor = true;
@@ -78,14 +82,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(801, 442);
             this.Controls.Add(this.buttonGeneral);
             this.Controls.Add(this.buttonTechnology);
             this.Controls.Add(this.buttonSport);
             this.Controls.Add(this.buttonHistory);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "QuizApp";
             this.ResumeLayout(false);
 
         }
