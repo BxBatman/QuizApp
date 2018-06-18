@@ -9,18 +9,24 @@ namespace QuizApp
 {
     public partial class Form1 : Form
     {
-        private String path;
-        private XElement xElement;
-        private IEnumerable<XElement> questions;
+        private static String path;
+        private static XElement xElement;
+        private static IEnumerable<XElement> questions;
         
 
 
         public Form1()
         {
             InitializeComponent();
-            this.path = "../../quiz.xml";
-            this.xElement = XElement.Load(path);
-            this.questions = xElement.Elements();
+            path = "../../quiz.xml";
+            xElement = XElement.Load(path);
+            questions = xElement.Elements();
+        }
+
+        public static void reloadXml()
+        {
+            xElement = XElement.Load(path);
+            questions = xElement.Elements();
         }
 
         public Boolean checkAnswer(XElement xEle) {
@@ -42,7 +48,7 @@ namespace QuizApp
 
             int num = 0;
             int q_num = 0;
-            foreach (XElement xEle in list)
+            foreach (XElement xEle in list.Take(5))
             {
                 q_num++;
                 DialogResult answer = MessageBox.Show(xEle.Element("text").Value, "Pytanie" + q_num, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -139,6 +145,13 @@ namespace QuizApp
 
             doQuiz(shuffledList);
 
+        }
+
+        private void buttonManager_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+           
         }
     }
 }

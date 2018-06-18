@@ -34,6 +34,7 @@
             this.buttonGeneral = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonManager = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonHistory
@@ -104,12 +105,23 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "QUIZ";
             // 
+            // buttonManager
+            // 
+            this.buttonManager.Location = new System.Drawing.Point(663, 368);
+            this.buttonManager.Name = "buttonManager";
+            this.buttonManager.Size = new System.Drawing.Size(126, 26);
+            this.buttonManager.TabIndex = 6;
+            this.buttonManager.Text = "Zarządzaj";
+            this.buttonManager.UseVisualStyleBackColor = true;
+            this.buttonManager.Click += new System.EventHandler(this.buttonManager_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(801, 442);
+            this.Controls.Add(this.buttonManager);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonGeneral);
@@ -133,5 +145,6 @@
         private System.Windows.Forms.Button buttonGeneral;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonManager;
     }
 }

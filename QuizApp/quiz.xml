@@ -1,11 +1,10 @@
-<?xml version="1.0"?>
+<?xml version="1.0" standalone="yes"?>
 <quiz>
   <question id="1">
     <category>Historia</category>
     <text>Czy bitwa pod grunwaldem odbyła się w 1910r. ?</text>
     <answer>Tak</answer>
   </question>
-  
   <question id="2">
     <category>Historia</category>
     <text>Pokój w Budziszynie został podpisany w 1018r. Tak czy nie ?</text>
@@ -16,115 +15,89 @@
     <text>Kordian został napisany przez Adama Mickiewicza</text>
     <answer>Nie</answer>
   </question>
-  
   <question id="4">
     <category>Historia</category>
     <text>1650 - Pojawienie się pierwszych jezuitów w Polsce</text>
     <answer>Nie</answer>
   </question>
-
   <question id="5">
     <category>Historia</category>
     <text>Kraków odniósł najwięcej strat podczas 2 wojny światowej</text>
     <answer>Nie</answer>
   </question>
-
-
   <question id="6">
     <category>Sport</category>
     <text>Robert Lewandowski to piłkarz polskie reprezentacji?</text>
     <answer>Tak</answer>
   </question>
-
   <question id="7">
     <category>Sport</category>
     <text>Japońskie łucznictwo konne nosi nazwe yokohasame?</text>
     <answer>Nie</answer>
   </question>
-
   <question id="8">
     <category>Sport</category>
-    <text>Valeninto Rossi to cyklista?</text>
+    <text>Valeninto Rossi to rowerzysta?</text>
     <answer>Nie</answer>
   </question>
-
-
   <question id="9">
     <category>Sport</category>
     <text>Czy istnieje taka gra jak snooker ?</text>
     <answer>Tak</answer>
   </question>
-
-
   <question id="10">
     <category>Sport</category>
     <text>Czy bramkarz może wyjść poza pole bramkowe ?</text>
     <answer>Tak</answer>
   </question>
-
-
   <question id="11">
     <category>Technologia</category>
     <text>System ABS wspomaga hamowanie</text>
     <answer>Tak</answer>
   </question>
-
-
   <question id="12">
     <category>Technologia</category>
     <text>VR i AR to to samo</text>
     <answer>Nie</answer>
   </question>
-
-
   <question id="13">
     <category>Technologia</category>
-    <text>Okulary 3d maja kolory zielono żółte</text>
+    <text>Okulary 3d maja kolory zielono szare</text>
     <answer>Nie</answer>
   </question>
-
-
   <question id="14">
     <category>Technologia</category>
     <text>80 stopni celsjusza - przy takie temperaturze wrze woda na Mount Everest</text>
     <answer>Nie</answer>
   </question>
-
   <question id="15">
     <category>Technologia</category>
     <text>Intel to firma produkująca procesory</text>
     <answer>Tak</answer>
   </question>
-
   <question id="16">
     <category>Ogólne</category>
     <text>Rok ma zawsze 364 dni</text>
     <answer>Nie</answer>
   </question>
-
   <question id="17">
     <category>Ogólne</category>
     <text>Jest 6 pór roku</text>
     <answer>Nie</answer>
   </question>
-
   <question id="18">
     <category>Ogólne</category>
     <text>L w alfabecie rzymskim to 50</text>
     <answer>Tak</answer>
   </question>
-
-
   <question id="19">
     <category>Ogólne</category>
-    <text>3000*4-2 to 11998</text>
-    <answer>Tak</answer>
+    <text>3000*4-2 to 11996</text>
+    <answer>Nie</answer>
   </question>
-
   <question id="20">
     <category>Ogólne</category>
     <text>Facebook to najpopularniejszy serwis społecznościowy</text>
     <answer>Tak</answer>
   </question>
-
 </quiz>
