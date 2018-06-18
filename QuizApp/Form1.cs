@@ -41,10 +41,11 @@ namespace QuizApp
 
 
             int num = 0;
-
+            int q_num = 0;
             foreach (XElement xEle in list)
             {
-                DialogResult answer = MessageBox.Show(xEle.Element("text").Value, "Pytanie" + num, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                q_num++;
+                DialogResult answer = MessageBox.Show(xEle.Element("text").Value, "Pytanie" + q_num, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (answer == DialogResult.Yes)
                 {
                     if (checkAnswer(xEle))
